@@ -1,3 +1,3 @@
 #!/bin/bash
 
-test  `cat stdin.in | ./wvuhello | grep "Max value" | awk -F: '{print $2}'` -eq 4
+test  `cat stdin.txt | ./wvuhello | grep "Max value" | awk -F: '{print $2}'` -eq 4
