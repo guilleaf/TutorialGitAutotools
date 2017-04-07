@@ -31,3 +31,27 @@
 # Debug files
 *.dSYM/
 *.su
+
+# Special ignores to remove autoconf generated files
+*.in
+*~
+*Makefile
+aclocal.m4
+autom4te.cache/
+compile
+config.h
+config.log
+config.status
+configure
+depcomp
+install-sh
+missing
+src/.deps
+src/Makefile
+src/output
+src/test-suite.log
+src/wvuhello
+src/wvutest.sh.log
+src/wvutest.sh.trs
+stamp-h1
+test-driver
