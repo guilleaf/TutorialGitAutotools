@@ -4,7 +4,7 @@
 
 int main()
 {
-  int i,j, sret;
+  int i,j, sret, ans;
 
   printf("West Virginia University\n");
   printf("------------------------\n\n");
@@ -13,12 +13,14 @@ int main()
   printf("Report bugs to %s\n\n", PACKAGE_BUGREPORT);
 
   printf("Enter 2 integer numbers:");
-  sret=scanf ("%d %d", &i, &j);
-
-  if (sret != 2) perror("ERROR: scanf");
-  else printf( "\nMax value is : %d\n\n", max2int(i,j) );
-
-
+  sret = scanf ("%d %d", &i, &j);
+  if (sret != 2) {
+	  printf("ERROR: scanf could not read 2 integers, scanf return:%d\n", sret);
+	  return(-1);
+  }
+  else printf( "\nMax value is : %d\n\n", max2int(i,j));
+  
   printf("Run Complete\n");
-  return 0;
+  return(0);
 }
+
